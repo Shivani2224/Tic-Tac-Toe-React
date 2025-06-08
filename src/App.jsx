@@ -32,7 +32,7 @@ function App() {
           activePlayerSymbole={activePlayer}
         />
       </div>
-      <section id="log-container" className="log-container"></section>
+      <Logs/>
     </main>
   );
 }
