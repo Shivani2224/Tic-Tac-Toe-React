@@ -67,10 +67,13 @@ function App() {
   }
   return (
     <main>
-      {/* <header id="header">
-        <img src={logo} alt="game-logo" />
-      </header> */}
-
+      <header className="logo-container">
+        <img
+          src="public\game-logo.png"
+          alt="Tic-Tac-Toe Logo"
+          className="game-logo"
+        />
+      </header>
       <div id="game-container" className="game-container">
         <ol id="players" className="highlight-player">
           <Player
