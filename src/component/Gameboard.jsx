@@ -7,14 +7,18 @@ const initialGame = [
 ];
 
 export default function GameBoard({ onSelectSquare, turns = [] }) {
-  let gameBoard = initialGame;
+  const gameBoard = [
+    [null, null, null],
+    [null, null, null],
+    [null, null, null],
+  ];
 
   for (const turn of turns) {
     const { square, player } = turn;
     const { row, col } = square;
     gameBoard[row][col] = player;
   }
-console.log({gameBoard})
+  console.log({ gameBoard });
   // const [gameboard, setGameboard] = useState(initialGame);
 
   // function handleSelectSquare(rowIndex, colIndex) {
