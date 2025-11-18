@@ -4,6 +4,7 @@ import Gameboard from "./component/Gameboard";
 import Log from "./component/Log";
 import { Winning_Combination } from "./component/winning-combination";
 import GameOver from "./component/GameOver";
+import gameLogo from "./assets/game-logo.png";
 
 const initialGameBoard = [
   [null, null, null],
@@ -69,7 +70,7 @@ function App() {
     <main>
       <header className="logo-container">
         <img
-          src="/game-logo.png"
+          src={gameLogo}
           alt="Tic-Tac-Toe Logo"
           className="game-logo"
         />
