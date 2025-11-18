@@ -69,7 +69,7 @@ function App() {
     <main>
       <header className="logo-container">
         <img
-          src="public\game-logo.png"
+          src="/game-logo.png"
           alt="Tic-Tac-Toe Logo"
           className="game-logo"
         />
